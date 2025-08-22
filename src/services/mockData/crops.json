@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "farmId": "1",
+    "name": "Sweet Corn",
+    "variety": "Golden Bantam",
+    "plantingDate": "2024-04-15",
+    "expectedHarvest": "2024-07-20",
+    "growthStage": "Growing",
+    "area": 25,
+    "notes": "Planted in north field, good soil conditions"
+  },
+  {
+    "Id": 2,
+    "farmId": "1",
+    "name": "Winter Wheat",
+    "variety": "Hard Red",
+    "plantingDate": "2024-03-01",
+    "expectedHarvest": "2024-08-15",
+    "growthStage": "Flowering",
+    "area": 40,
+    "notes": "Excellent germination rate, minimal pest pressure"
+  },
+  {
+    "Id": 3,
+    "farmId": "2",
+    "name": "Tomatoes",
+    "variety": "Beefsteak",
+    "plantingDate": "2024-05-01",
+    "expectedHarvest": "2024-08-30",
+    "growthStage": "Growing",
+    "area": 15,
+    "notes": "Greenhouse grown, drip irrigation system"
+  },
+  {
+    "Id": 4,
+    "farmId": "2",
+    "name": "Bell Peppers",
+    "variety": "California Wonder",
+    "plantingDate": "2024-04-20",
+    "expectedHarvest": "2024-07-15",
+    "growthStage": "Flowering",
+    "area": 10,
+    "notes": "Companion planted with basil"
+  },
+  {
+    "Id": 5,
+    "farmId": "3",
+    "name": "Organic Lettuce",
+    "variety": "Butterhead",
+    "plantingDate": "2024-05-10",
+    "expectedHarvest": "2024-06-20",
+    "growthStage": "Maturing",
+    "area": 8,
+    "notes": "Succession planting every 2 weeks"
+  },
+  {
+    "Id": 6,
+    "farmId": "3",
+    "name": "Carrots",
+    "variety": "Nantes",
+    "plantingDate": "2024-03-25",
+    "expectedHarvest": "2024-07-05",
+    "growthStage": "Ready",
+    "area": 12,
+    "notes": "Sandy soil preparation completed"
+  }
+]

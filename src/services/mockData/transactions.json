@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "farmId": "1",
+    "type": "expense",
+    "category": "seeds",
+    "amount": 450.00,
+    "date": "2024-04-10",
+    "description": "Sweet corn seeds for spring planting",
+    "vendor": "AgriSupply Co."
+  },
+  {
+    "Id": 2,
+    "farmId": "1",
+    "type": "expense",
+    "category": "fertilizer",
+    "amount": 320.00,
+    "date": "2024-04-25",
+    "description": "Nitrogen fertilizer for wheat crop",
+    "vendor": "Farm Solutions Inc."
+  },
+  {
+    "Id": 3,
+    "farmId": "2",
+    "type": "income",
+    "category": "crops",
+    "amount": 1200.00,
+    "date": "2024-05-15",
+    "description": "Sale of early tomato harvest",
+    "vendor": "Local Market Co-op"
+  },
+  {
+    "Id": 4,
+    "farmId": "2",
+    "type": "expense",
+    "category": "equipment",
+    "amount": 850.00,
+    "date": "2024-05-02",
+    "description": "New irrigation timers and sensors",
+    "vendor": "IrrigationPro"
+  },
+  {
+    "Id": 5,
+    "farmId": "3",
+    "type": "expense",
+    "category": "labor",
+    "amount": 600.00,
+    "date": "2024-05-20",
+    "description": "Seasonal help for planting and weeding",
+    "vendor": "Local Farm Workers"
+  },
+  {
+    "Id": 6,
+    "farmId": "3",
+    "type": "income",
+    "category": "crops",
+    "amount": 780.00,
+    "date": "2024-06-01",
+    "description": "Organic lettuce sales to restaurants",
+    "vendor": "Chef's Table Restaurant"
+  },
+  {
+    "Id": 7,
+    "farmId": "1",
+    "type": "expense",
+    "category": "fuel",
+    "amount": 240.00,
+    "date": "2024-05-28",
+    "description": "Diesel fuel for tractor operations",
+    "vendor": "County Fuel Station"
+  },
+  {
+    "Id": 8,
+    "farmId": "2",
+    "type": "expense",
+    "category": "supplies",
+    "amount": 125.00,
+    "date": "2024-06-05",
+    "description": "Plant stakes and ties for tomatoes",
+    "vendor": "Garden Center Plus"
+  },
+  {
+    "Id": 9,
+    "farmId": "1",
+    "type": "income",
+    "category": "grants",
+    "amount": 2500.00,
+    "date": "2024-06-08",
+    "description": "USDA conservation practice grant",
+    "vendor": "USDA"
+  },
+  {
+    "Id": 10,
+    "farmId": "3",
+    "type": "expense",
+    "category": "utilities",
+    "amount": 180.00,
+    "date": "2024-06-10",
+    "description": "Electricity for greenhouse operations",
+    "vendor": "County Electric Co."
+  }
+]
