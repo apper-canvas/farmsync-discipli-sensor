@@ -22,7 +22,17 @@ const Header = ({ title, subtitle, onMobileMenuToggle, className }) => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
+<div className="flex items-center gap-4">
+          <button
+            onClick={() => {
+              const { logout } = React.useContext(require('../../App').AuthContext);
+              logout();
+            }}
+            className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+          >
+            <ApperIcon name="LogOut" className="w-4 h-4" />
+            Logout
+          </button>
           <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
             <ApperIcon name="User" className="w-4 h-4 text-white" />
           </div>
