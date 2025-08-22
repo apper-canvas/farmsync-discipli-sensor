@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import ApperIcon from "@/components/ApperIcon";
 import { cn } from "@/utils/cn";
+import { AuthContext } from "../../App";
 
 const Header = ({ title, subtitle, onMobileMenuToggle, className }) => {
+  const authMethods = useContext(AuthContext);
+  
   return (
     <header className={cn("bg-white border-b border-gray-200 px-6 py-4", className)}>
       <div className="flex items-center justify-between">
@@ -25,8 +28,7 @@ const Header = ({ title, subtitle, onMobileMenuToggle, className }) => {
 <div className="flex items-center gap-4">
           <button
             onClick={() => {
-              const { logout } = React.useContext(require('../../App').AuthContext);
-              logout();
+              authMethods?.logout();
             }}
             className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
           >
