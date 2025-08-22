@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { format } from "date-fns";
-import Button from "@/components/atoms/Button";
-import FormField from "@/components/molecules/FormField";
-import Modal from "@/components/molecules/Modal";
 import ApperIcon from "@/components/ApperIcon";
+import Select from "@/components/atoms/Select";
+import Button from "@/components/atoms/Button";
+import Modal from "@/components/molecules/Modal";
+import FormField from "@/components/molecules/FormField";
 
 const TransactionForm = ({ isOpen, onClose, onSubmit, transaction = null, farms = [] }) => {
   const [formData, setFormData] = useState({
@@ -115,22 +116,19 @@ const TransactionForm = ({ isOpen, onClose, onSubmit, transaction = null, farms 
             <option value="expense">Expense</option>
             <option value="income">Income</option>
           </FormField>
-
-          <FormField
+<FormField
             label="Farm"
-            type="select"
+            type="radiogroup"
             value={formData.farmId}
-            onChange={(e) => handleChange("farmId", e.target.value)}
+            onChange={(value) => handleChange("farmId", value)}
             error={errors.farmId}
             required
-          >
-            <option value="">Select a farm</option>
-            {farms.map(farm => (
-              <option key={farm.Id} value={farm.Id}>
-                {farm.name}
-              </option>
-            ))}
-          </FormField>
+            name="farmId"
+            options={farms.map(farm => ({
+              value: farm.Id,
+              label: farm.name
+}))}
+          />
         </div>
 
         <div className="grid grid-cols-2 gap-4">

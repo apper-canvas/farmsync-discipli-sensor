@@ -3,6 +3,7 @@ import Label from "@/components/atoms/Label";
 import Input from "@/components/atoms/Input";
 import Select from "@/components/atoms/Select";
 import Textarea from "@/components/atoms/Textarea";
+import RadioGroup from "@/components/atoms/RadioGroup";
 import { cn } from "@/utils/cn";
 
 const FormField = ({ 
@@ -14,7 +15,7 @@ const FormField = ({
   required,
   ...props 
 }) => {
-  const renderInput = () => {
+const renderInput = () => {
     if (children) return children;
     
     switch (type) {
@@ -22,6 +23,8 @@ const FormField = ({
         return <Select error={error} {...props} />;
       case "textarea":
         return <Textarea error={error} {...props} />;
+      case "radiogroup":
+        return <RadioGroup error={error} {...props} />;
       default:
         return <Input type={type} error={error} {...props} />;
     }

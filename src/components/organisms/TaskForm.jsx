@@ -105,22 +105,20 @@ const TaskForm = ({ isOpen, onClose, onSubmit, task = null, farms = [], crops = 
           rows={3}
         />
 
-        <div className="grid grid-cols-2 gap-4">
+<div className="grid grid-cols-2 gap-4">
           <FormField
             label="Farm"
-            type="select"
+            type="radiogroup"
             value={formData.farmId}
-            onChange={(e) => handleChange("farmId", e.target.value)}
+            onChange={(value) => handleChange("farmId", value)}
             error={errors.farmId}
             required
-          >
-            <option value="">Select a farm</option>
-            {farms.map(farm => (
-              <option key={farm.Id} value={farm.Id}>
-                {farm.name}
-              </option>
-            ))}
-          </FormField>
+            name="farmId"
+            options={farms.map(farm => ({
+              value: farm.Id,
+              label: farm.name
+            }))}
+          />
 
           <FormField
             label="Crop (Optional)"
